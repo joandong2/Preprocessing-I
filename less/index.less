@@ -54,7 +54,7 @@ table {
 }
 
 /***
-	Variable
+	Variables
 ***/
 
 @main-color:  #000000;
@@ -99,7 +99,7 @@ body {
 h1 {
 	font-family: 'Merriweather', serif;
 	font-size: 2.2em;
-	font-weight: 800;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: @main-color;
 }
@@ -124,6 +124,10 @@ p {
 	display: flex;
 }
 
+/***
+	Misc
+***/
+
 .normal {
 	font-weight: normal;
 }
@@ -137,8 +141,20 @@ p {
 	margin-bottom: 10px;
 }
 
+.black {
+	color: @main-color;
+}
+
+.capitalize {
+	text-transform: uppercase;
+}
+
 .white {
 	color: @secondary-color;
+}
+
+.darkwhite {
+	color: @primary-color;
 }
 
 .margin-0 {
@@ -194,6 +210,16 @@ p {
 	}
 
 	.personal-infos {
+
+		.block-info-wrapper {
+			border-bottom: 1px solid #c7c7c7;
+			margin-bottom: 60px;
+
+			&:last-child {
+				border-bottom: unset;
+			}
+		}
+
 		.block-infos {
 			margin-bottom: 20px;
 		}

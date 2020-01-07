@@ -130,7 +130,7 @@ table {
   box-sizing: border-box;
 }
 /***
-	Variable
+	Variables
 ***/
 /***
 	Mixins
@@ -197,7 +197,7 @@ body {
 h1 {
   font-family: 'Merriweather', serif;
   font-size: 2.2em;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 }
@@ -218,6 +218,9 @@ p {
   margin: 0 auto;
   display: flex;
 }
+/***
+	Misc
+***/
 .normal {
   font-weight: normal;
 }
@@ -229,8 +232,17 @@ p {
   color: black;
   margin-bottom: 10px;
 }
+.black {
+  color: #000000;
+}
+.capitalize {
+  text-transform: uppercase;
+}
 .white {
   color: #ffffff;
+}
+.darkwhite {
+  color: #6d6d6d;
 }
 .margin-0 {
   margin: 0;
@@ -272,6 +284,13 @@ p {
   font-size: 2.5rem;
   color: #000000;
   margin-bottom: 10px;
+}
+.main-content .personal-infos .block-info-wrapper {
+  border-bottom: 1px solid #c7c7c7;
+  margin-bottom: 60px;
+}
+.main-content .personal-infos .block-info-wrapper:last-child {
+  border-bottom: unset;
 }
 .main-content .personal-infos .block-infos {
   margin-bottom: 20px;
