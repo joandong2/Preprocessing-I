@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	//font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -53,10 +53,130 @@ table {
     box-sizing: border-box;
 }
 
-@variable-name:  #FF0000;
+/***
+	Variable
+***/
 
-html, body {
-	height: 100%;
-	background: @variable-name;
+@main-color:  #000000;
+@secondary-color: #ffffff;
+
+/***
+	Mixins
+***/
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+.flex-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+/***
+	Main Styles
+***/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	background: @secondary-color;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2.4em;
+	font-family: 'Shrikhand', cursive;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+h5 {
+	font-size: 0.8em;
+}
+
+h6 {
+	font-size: 0.8em;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	.flex-content();
+}
+
+/***
+	Columns
+***/
+
+.column1 {
+	width: 76%;
+	padding: 1%;
+}
+
+.column2 {
+	width: 48%;
+	padding: 1%;
+}
+
+.column3 {
+	width: 22%;
+	padding: 1%;
+}
+
+.introduction {
+
+	.summary {
+		margin-top: 10px;
+		padding-top: 10px;
+		border-top: 1px solid #000;
+	}
+
+	.rounded {
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	}
+
+	.profile-picture {
+		text-align: center;
+		.flex-center();
+
+		img {
+			width: 65%;
+		}
+	}
+}
+
+
+.main-content {
+	background: @main-color;
+	color: @secondary-color;
+	width: 100%;
+}
