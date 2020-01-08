@@ -144,6 +144,15 @@ table {
   display: flex;
   justify-content: space-between;
 }
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.flex-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
 /***
 	Main Styles
 ***/
@@ -209,15 +218,6 @@ p {
   margin-bottom: 10px;
   line-height: 3.4rem;
 }
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-.flex-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-}
 /***
 	Misc
 ***/
@@ -252,12 +252,29 @@ p {
 	Columns
 ***/
 .column1 {
-  width: 73%;
+  width: 70%;
   padding: 1%;
 }
 .column2 {
-  width: 26%;
+  width: 29%;
   padding: 1%;
+}
+/***
+	Main
+***/
+header nav {
+  margin-top: 15px;
+}
+header nav a {
+  text-decoration: unset;
+  margin-right: 5px;
+  color: #000000;
+  font-weight: 800;
+  transition: all 0.2s;
+}
+header nav a:hover {
+  color: #6d6d6d;
+  border-top: 1px solid #6d6d6d;
 }
 .introduction {
   background: #000000;
@@ -285,6 +302,16 @@ p {
   color: #000000;
   margin-bottom: 10px;
 }
+.main-content .contact-infos ul li .progress-bar {
+  width: 100%;
+  max-height: 23px;
+}
+.main-content .contact-infos ul li .progress-bar .progress-bar-fill {
+  display: block;
+  height: 22px;
+  background-color: #000000;
+  transition: width 500ms ease-in-out;
+}
 .main-content .personal-infos .block-info-wrapper {
   border-bottom: 1px solid #c7c7c7;
   margin-bottom: 60px;
@@ -298,6 +325,6 @@ p {
 footer .content {
   border-top: 1px solid #6d6d6d;
   padding-top: 10px;
-  text-align: right;
+  text-align: left;
   margin-bottom: 30px;
 }
