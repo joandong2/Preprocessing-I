@@ -148,10 +148,30 @@ table {
   max-width: 960px;
   margin: 0 auto;
 }
+@media (max-width: 850px) {
+  .wrapper {
+    padding: 0 3%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 0 4.5%;
+  }
+}
 .flex-wrapper {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
+}
+@media (max-width: 850px) {
+  .flex-wrapper {
+    padding: 0 3%;
+  }
+}
+@media (max-width: 500px) {
+  .flex-wrapper {
+    padding: 0 4.5%;
+  }
 }
 /***
 	Main Styles
@@ -218,6 +238,11 @@ p {
   margin-bottom: 10px;
   line-height: 3.4rem;
 }
+@media (max-width: 500px) {
+  p {
+    line-height: 2.4rem;
+  }
+}
 /***
 	Misc
 ***/
@@ -255,9 +280,19 @@ p {
   width: 70%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .column1 {
+    width: 98%;
+  }
+}
 .column2 {
   width: 29%;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .column2 {
+    width: 98%;
+  }
 }
 /***
 	Main
@@ -276,19 +311,40 @@ header nav a:hover {
   color: #6d6d6d;
   border-top: 1px solid #6d6d6d;
 }
+@media (max-width: 500px) {
+  .jumbotron p {
+    line-height: 2rem;
+    margin-top: 10px;
+  }
+}
 .introduction {
   background: #000000;
   color: #ffffff;
   padding: 1% 0;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .introduction {
+    padding: 5% 0 4%;
+  }
+}
 .introduction .rounded {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
+@media (max-width: 500px) {
+  .main-content .flex-wrapper {
+    flex-direction: column;
+  }
+}
 .main-content .contact-infos ul {
   margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .main-content .contact-infos ul {
+    margin-bottom: 25px;
+  }
 }
 .main-content .contact-infos ul li {
   display: flex;
