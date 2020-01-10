@@ -1,1 +1,385 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/***
+	Variables
+***/
+/***
+	Mixins
+***/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-content {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (max-width: 850px) {
+  .wrapper {
+    padding: 0 3%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 0 4.5%;
+  }
+}
+.flex-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width: 850px) {
+  .flex-wrapper {
+    padding: 0 3%;
+  }
+}
+@media (max-width: 500px) {
+  .flex-wrapper {
+    padding: 0 4.5%;
+  }
+}
+/***
+	Main Styles
+***/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v21/u-4n0qyriQwlOrhSvowK_l52xwNZWMf_.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Merriweather Black'), local('Merriweather-Black'), url(https://fonts.gstatic.com/s/merriweather/v21/u-4n0qyriQwlOrhSvowK_l52_wFZWMf_.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  background: #ffffff;
+  color: #6d6d6d;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+p {
+  margin-bottom: 10px;
+  line-height: 3.4rem;
+}
+@media (max-width: 500px) {
+  p {
+    line-height: 2.4rem;
+  }
+}
+/***
+	Misc
+***/
+.normal {
+  font-weight: normal;
+}
+.header {
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 10px;
+}
+.black {
+  color: #000000;
+}
+.capitalize {
+  text-transform: uppercase;
+}
+.white {
+  color: #ffffff;
+}
+.darkwhite {
+  color: #6d6d6d;
+}
+.margin-0 {
+  margin: 0;
+  line-height: 1;
+}
+/***
+	Columns
+***/
+.column1 {
+  width: 70%;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .column1 {
+    width: 98%;
+  }
+}
+.column2 {
+  width: 29%;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .column2 {
+    width: 98%;
+  }
+}
+/***
+	Main
+***/
+header nav {
+  margin-top: 15px;
+}
+header nav a {
+  text-decoration: unset;
+  margin-right: 5px;
+  color: #000000;
+  font-weight: 800;
+}
+header nav a:hover {
+  color: #6d6d6d;
+  border-top: 1px solid #6d6d6d;
+}
+@media (max-width: 500px) {
+  .jumbotron p {
+    line-height: 2rem;
+    margin-top: 10px;
+  }
+}
+.introduction {
+  background: #000000;
+  color: #ffffff;
+  padding: 1% 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .introduction {
+    padding: 5% 0 4%;
+  }
+}
+.introduction .rounded {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .main-content .flex-wrapper {
+    flex-direction: column;
+  }
+}
+.main-content .contact-infos ul {
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .main-content .contact-infos ul {
+    margin-bottom: 25px;
+  }
+}
+.main-content .contact-infos ul li {
+  display: flex;
+  justify-content: space-between;
+  justify-content: unset;
+}
+.main-content .contact-infos ul li i {
+  width: 15%;
+  text-align: left;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.main-content .contact-infos ul li .progress-bar {
+  width: 100%;
+  max-height: 23px;
+}
+.main-content .contact-infos ul li .progress-bar .progress-bar-fill {
+  display: block;
+  height: 22px;
+  background-color: #000000;
+  transition: width 500ms ease-in-out;
+}
+.main-content .personal-infos .block-info-wrapper {
+  border-bottom: 1px solid #c7c7c7;
+  margin-bottom: 60px;
+}
+.main-content .personal-infos .block-info-wrapper:last-child {
+  border-bottom: unset;
+}
+.main-content .personal-infos .block-infos {
+  margin-bottom: 20px;
+}
+footer .content {
+  border-top: 1px solid #6d6d6d;
+  padding-top: 10px;
+  text-align: left;
+  margin-bottom: 30px;
+}
